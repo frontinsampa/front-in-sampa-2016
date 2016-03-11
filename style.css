@@ -1,1 +1,206 @@
 /* Não usar bootstrap, pelamor de deus */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img,
+small, strong, b, u, i, ol, ul, li, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, nav, output, ruby, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, figure, footer, header, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@keyframes colors {
+    from   {
+        color: #fff;
+        background-color: #000;
+    }
+
+    to {
+        color: #000;
+        background-color: transparent;
+    }
+}
+
+
+@keyframes logo {
+    from   {
+        transform: translate(0, -20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 60px);
+        opacity: 1;
+    }
+}
+
+.fis-site {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fis-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: 1em/1.2em "Open Sans", sans-serif;
+    color: #fff;
+    animation: colors 1s linear .2s;
+    animation-fill-mode: forwards;
+    background-color: #000;
+    /**
+     * Vai ter margin negativa sim.
+     */
+    margin-top: -90px;
+}
+
+.fis-header, .fis-intro {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.fis-header {
+    display: flex;
+    justify-content: center;
+}
+
+.fis-logo {
+    display: block;
+    margin-bottom: 1.3em;
+}
+
+@media screen and (min-width: 511px) {
+    .fis-logo {
+        width: 510px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .fis-logo {
+        max-width: 510px;
+        max-height: 360px;
+    }
+}
+
+.fis-logo svg {
+    padding: 0 0 0 55px;
+    transform: translate(0, -20px);
+    opacity: 0;
+    animation: logo .4s linear .1s;
+    animation-fill-mode: forwards;
+}
+
+.fis-title {
+    font: 100 1.12em/1.3em "Oswald", sans-serif;
+}
+
+.fis-slogan {
+    font: 600 3em/1.3em "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.fis-ticket {
+    display: flex;
+    max-width: 380px;
+    padding: 20px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 30px auto;
+    box-shadow: 3px 4px #2e9000;
+    background-color: #48b300;
+}
+
+.fis-ticket-info {
+    display: block;
+    font: .56em/1.2em "Open Sans", sans-serif;
+}
+
+.fis-section {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fis-section:not(.fis-intro),
+.fis-footer {
+    padding: 30px 5px;
+}
+
+.fis-section-title {
+    font: 100 2em/1.3em "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.fis-section-subtitle {
+    font: 400 1.2em/1.3em "Oswald", sans-serif;
+}
+
+.fis-sponsor,
+.fis-footer {
+    color: #fff;
+    background-color: #000;
+}
+
+.fis-email {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.fis-highlight {
+    color: #DF0A15;
+}
+
+.fis-social {
+    margin: 0 5px;
+}
+
+.fis-footer {
+    font-size: .7em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fis-footer p:last-of-type {
+    margin-bottom: 0;
+}
