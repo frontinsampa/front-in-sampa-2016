@@ -61,7 +61,7 @@ a {
     }
 
     to {
-        transform: translate(0, 60px);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
@@ -81,10 +81,6 @@ a {
     animation: colors 1s linear .2s;
     animation-fill-mode: forwards;
     background-color: #000;
-    /**
-     * Vai ter margin negativa sim.
-     */
-    margin-top: -90px;
 }
 
 .fis-header, .fis-intro {
@@ -98,34 +94,24 @@ a {
 }
 
 .fis-logo {
-    display: block;
-    margin-bottom: 1.3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
 }
 
-@media screen and (min-width: 511px) {
-    .fis-logo {
-        width: 510px;
-        height: 360px;
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .fis-logo {
-        max-width: 510px;
-        max-height: 360px;
-    }
-}
-
-.fis-logo svg {
-    padding: 0 0 0 55px;
-    transform: translate(0, -20px);
+.fis-logo img {
+    margin: 30px auto 0 auto;
     opacity: 0;
+    transform: translate(0, -20px);
     animation: logo .4s linear .1s;
     animation-fill-mode: forwards;
+    max-height: 200px;
 }
 
 .fis-title {
-    font: 100 1.12em/1.3em "Oswald", sans-serif;
+    margin-top: 30px;
+    font: 100 1.12em/1.2em "Oswald", sans-serif;
 }
 
 .fis-slogan {
