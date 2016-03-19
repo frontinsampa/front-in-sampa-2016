@@ -380,6 +380,7 @@ img {
     animation: background 1s linear 1s;
     animation-fill-mode: forwards;
     pointer-events: none;
+    z-index: 9999;
 }
 .logo svg {
     transform: translateY(30%);
@@ -1327,4 +1328,18 @@ img {
     .area-top .subtitle {
         margin: 20px 0;
     }
+}
+
+.speakers small,
+.social-nicknames {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-nicknames img,
+.speakers small img {
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
 }
