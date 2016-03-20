@@ -25,6 +25,6 @@ $('body').on('ready', function() {
     }
 });
 
-$('[role="menuitem"]').on('click', function() {
-    $('body').removeClass('menu-visible');
+$('.area-menu a').on(function(){
+  $('body').removeClass('menu-visible');
 });
