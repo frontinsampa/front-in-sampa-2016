@@ -1014,7 +1014,7 @@ img {
 }
 
 .info-main .title {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 
 .info-main p {
@@ -1123,4 +1123,12 @@ body::before{
   -webkit-transition: opacity 0.35s 0.25s;
   transition: opacity 0.35s 0.25s;
   visibility: visible;
+}
+.info-main .save-date{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px
+}
+.info-main .save-date small{
+  font-weight: normal;
 }
