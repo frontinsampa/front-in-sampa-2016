@@ -690,7 +690,15 @@ img {
   #area-timeline .talk-time,
   #palestrantes .talk-time {
     color: white; }
+#palestrantes p{
+  font-size: 2rem;
+  color: #000;
+}
 
+#palestrantes .btn-send{
+  font-size: 2rem;
+  margin: 10px 0 40px;
+}
 .hide-mobile {
   display: none; }
 
